@@ -22,7 +22,33 @@ export default {
 
     data() {
         return {
-            assignments: [],
+            assignments: [
+                {
+                    "name": "Finish Tutorial",
+                    "complete": false,
+                    "id": 1,
+                    "tag": "work"
+                },
+                {
+                    "name": "Understand Vue 3",
+                    "complete": false,
+                    "id": 2,
+                    "tag": "neither"
+                },
+                {
+                    "name": "Build something with it",
+                    "complete": false,
+                    "id": 3,
+                    "tag": "fun"
+                },
+                {
+                    "name": "Use fake backend",
+                    "complete": true,
+                    "id": 4,
+                    "tag": "dev"
+                }
+        
+            ],
             showCompleted: true
         };
     },
@@ -37,13 +63,13 @@ export default {
         }
     },
 
-    created() {
-        fetch('http://127.0.0.1:8000/assignments')
-            .then(response => response.json())
-            .then(data => {
-                this.assignments = data;
-            });
-    },
+    // created() {
+    //     fetch('http://127.0.0.1:8000/assignments')
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             this.assignments = data;
+    //         });
+    // },
 
     methods: {
         add(name) {
