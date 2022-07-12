@@ -13,6 +13,7 @@ export default {
                 :assignment="assignment"
             ></assignment>
         </ul>
+
     </section>
     `,
     props: {
