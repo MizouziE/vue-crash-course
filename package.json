@@ -3,6 +3,7 @@
     "start": "npx serve & npx json-server db.json -p 8000"
   },
   "devDependencies": {
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "serve": "^14.0.0"
   }
 }
