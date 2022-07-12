@@ -19,17 +19,20 @@ export default {
                 {
                     name: 'Finish Tutorial',
                     complete: false,
-                    id: 1
+                    id: 1,
+                    tag: 'work'
                 },
                 {
                     name: 'Understand Vue 3',
                     complete: false,
-                    id: 2
+                    id: 2,
+                    tag: 'neither'
                 },
                 {
                     name: 'Build something with it',
                     complete: false,
-                    id: 3
+                    id: 3,
+                    tag: 'fun'
                 }
             ]
         };
