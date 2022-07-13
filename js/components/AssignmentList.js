@@ -4,7 +4,7 @@ import AssignmentTags from "./AssignmentTags.js";
 export default {
     components: { Assignment, AssignmentTags },
     template: `
-    <section v-show="assignments.length" class="w-60">
+    <section v-show="assignments.length" class="w-60 bg-slate-600 p-4 border-slate-300 rounded">
         <div class="flex justify-between items-start">
             <h2 class="font-bold mb-2">
                 {{ title }}
@@ -19,7 +19,7 @@ export default {
             :initial-tags="assignments.map(a => a.tag)"
             ></assignment-tags>
 
-        <ul class="border border-gray-500 rounded-sm divide-y divide-gray-500 mt-4">
+        <ul class="border border-gray-500 divide-y divide-gray-500 mt-4">
             <assignment   
                 v-for="assignment in filteredAssignments"
                 :key="assignment.id"
